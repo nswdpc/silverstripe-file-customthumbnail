@@ -1,0 +1,17 @@
+SilverStripe\Assets\Folder:
+  folder1:
+    Name: folder
+SilverStripe\Assets\File:
+  file1:
+    Title: file
+    FileFilename: folder/file.txt
+    FileHash: b56df8ed5365fca1419818aa384ba3b5e7756047
+    Parent: =>SilverStripe\Assets\Folder.folder1
+    Name: file.txt
+NSWDPC\CustomThumbnail\Models\FileThumbnail:
+  thumb1:
+    Title: thankstilt
+    FileFilename: folder/thankstilt.jpeg
+    FileHash: 0395182736024d0b490ecf7da9a341dd742226de
+    Parent: =>SilverStripe\Assets\Folder.folder1
+    Name: thankstilt.jpeg

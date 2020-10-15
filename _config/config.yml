@@ -1,0 +1,9 @@
+---
+Name: nswdpc-file-customthumbnail
+---
+Silverstripe\Assets\File:
+  extensions:
+    - 'NSWDPC\CustomThumbnail\Extensions\FileExtension'
+SilverStripe\AssetAdmin\Forms\AssetFormFactory:
+  extensions:
+    - 'NSWDPC\CustomThumbnail\Extensions\AssetFormFactoryExtension'
