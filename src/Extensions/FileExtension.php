@@ -19,10 +19,16 @@ use SilverStripe\MimeValidator\MimeUploadValidator;
 class FileExtension extends DataExtension
 {
 
+    /**
+     * @inheritdoc
+     */
     private static $has_one = [
         'CustomThumbnail' => FileThumbnail::class
     ];
 
+    /**
+     * @inheritdoc
+     */
     private static $owns = [
         'CustomThumbnail'
     ];
@@ -68,6 +74,9 @@ class FileExtension extends DataExtension
         return $fields;
     }
 
+    /**
+     * @inheritdoc
+     */
     public function onBeforeWrite() {
         parent::onBeforeWrite();
         $thumb = $this->owner->CustomThumbnail();
@@ -76,6 +85,9 @@ class FileExtension extends DataExtension
         }
     }
 
+    /**
+     * @inheritdoc
+     */
     public function updateCMSFields(FieldList $fields)
     {
         if(!$this->owner instanceof FileThumbnail

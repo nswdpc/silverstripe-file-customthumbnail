@@ -17,7 +17,7 @@ use SilverStripe\AssetAdmin\Forms\UploadField;
 class AssetFormFactoryExtension extends Extension
 {
 
-  /**
+    /**
      * CMS Fields
      * @return FieldList
      */

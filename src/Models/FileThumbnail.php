@@ -13,10 +13,19 @@ use Silverstripe\Assets\Folder;
 
 class FileThumbnail extends Image {
 
+    /**
+     * @var string
+     */
     private static $custom_thumbail_directory = 'CustomThumbnails';
 
+    /**
+     * @var array
+     */
     private static $allowed_types = ['jpg','jpeg','gif','png', 'webp'];
 
+    /**
+     * @var array
+     */
     private static $belongs_to = [
         'ParentFile' => File::class.'.CustomThumbnail'
     ];
