@@ -24,7 +24,7 @@ class CustomThumbnailTest extends SapphireTest
 
     protected static $fixture_file = 'CustomThumbnailTest.yml';
 
-    public function setUp() {
+    public function setUp() : void {
         parent::setUp();
 
         TestAssetStore::activate('data');
@@ -43,7 +43,7 @@ class CustomThumbnailTest extends SapphireTest
         }
     }
 
-    public function tearDown()
+    public function tearDown() : void
     {
         TestAssetStore::reset();
         parent::tearDown();
