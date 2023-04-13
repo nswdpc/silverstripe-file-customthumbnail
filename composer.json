@@ -17,12 +17,12 @@
         }
     ],
     "require": {
-        "silverstripe/asset-admin" : "^1",
-        "silverstripe/assets": "^1",
-        "silverstripe/mimevalidator" : "^2"
+        "silverstripe/asset-admin" : "^1.10",
+        "silverstripe/assets": "^1.10",
+        "silverstripe/mimevalidator" : "^2.4"
     },
     "require-dev": {
-        "phpunit/phpunit": "^5.7",
-        "friendsofphp/php-cs-fixer": "^2.18"
+        "phpunit/phpunit": "^9.5",
+        "friendsofphp/php-cs-fixer": "^3"
     }
 }
